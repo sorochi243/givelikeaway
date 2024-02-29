@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://amateurphotographer.com/wp-content/uploads/sites/7/2023/09/iPhone_15_Pro_003.jpeg"); 
+      background-repeat: no-repeat;
+      background-color: black;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: right;
+    }
+
+    .title {
+      color: white;
+      font-size: 48px;
+      margin-top: 90px;
+      
+    }
+
+    .subtitle {
+      color: white;
+      font-size: 42px;
+      margin-bottom: 70px;
+      position: static;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: white;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      text-decoration: forestgreen;
+      font-size: 38px;
+    }
+
+    .countdown {
+      color: white;
+      font-size: 36px;
+      margin-top: 50px;
+    }
+
+    .form {
+      color: white;
+      font-size: 18px;
+      margin-top: 50px;
+    }
+
+    .input {
+      display: block;
+      width: 50%;
+      margin: 10px auto;
+      padding: 10px;
+      border: whitesmoke;
+      border-radius: 5px;
+    }
+
+    
+    
+</style>
+</head>
+<body>
+  
+ </body>   
+  <div class="container">
+    <h1 class="title">SOPRICHI RECORDS IS GIVING AWAY AN IPHONE </h1>
+    <h2 class="subtitle">HURRY NOW <br>APPLY</h2>
+    <h3 class="subtitle">Enter now for a chance to win the latest iPhone with amazing features.</h3>
+    <br>
+    <p class="countdown" id="timer">Hurry up! The giveaway ends on March 31, 2024.</p>
+    
+ <body>
+  
+ </body>   
+  </div>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 31, 2024 23:59:59").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="timer"
+      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "repeat";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+
+  
+      
+   
+     
+
+   
